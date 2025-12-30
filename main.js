@@ -57,8 +57,7 @@ console.log ("ผลบวก = ", result1);
     }
  
  */
-
-/
+/*
 Grade 
     >=80 เป็นเกรด A
     >=70 เป็นเกรด B 
@@ -81,7 +80,7 @@ Grade
 //     }else {
 //         console.log('F');
 //     }
-/
+/*
  
 && เเละ
 || หรือ
@@ -108,7 +107,7 @@ Grade
 // else {
 //     console.log ("เป็นเลขคี่");
 // }
-/ 
+/*
 while 
 for
 */

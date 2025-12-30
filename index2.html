@@ -23,10 +23,41 @@
         border: 10px solid rgb(54, 5, 0);
         background-color: orange;
        }
-
+.container .item {
+            background-color: lightblue;
+        }
+        .button {
+            background-color: rgb(155, 255, 54);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button.active {
+            background-color: blue;
+        }
+        .button.warning {
+            background-color: red;
+        }
     </style>
 </head>
 <body>
+      <div class="container">
+    Container content
+        <div class="item">
+            Item Content
+        </div>
+    </div>
+     <div class="footer-container">
+        Container content
+        <div class="item">
+            Item Content
+        </div>
+    </div>
+    <button class="button">Click Me</button>
+    <button class="button active">Delete</button>
+    <button class="button warning">Warning</button>
     <input type = "text">
 <!-- :hover = วาง :active = คลิก :focus = cursor อยู่ตรง -->
     <button class="button">Click Me!</button>
