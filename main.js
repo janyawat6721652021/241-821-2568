@@ -297,7 +297,7 @@ let doublescore_student = students.map((s) => {
     return s
 })
 
-console.log('student:',student)
+console.log('students',student)
 console.log(doublescore_student)
 
 let highscore_student = students.filter((s) => {
