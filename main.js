@@ -1,5 +1,5 @@
-//console.log ("Hello, World!.");
-//console.log ("This is a test JavaScript file.");
+console.log ("Hello, World!.");
+console.log ("This is a test JavaScript file.");
 
 /* 
 console.log ("JavaScript is working!");
