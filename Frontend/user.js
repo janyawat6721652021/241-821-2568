@@ -1,6 +1,12 @@
 const BASE_URL = "http://localhost:8000";
+
+let mode = 'CREATE';
+let selectedID = ''
+
 window.onload = async () => {
-    await loadData();
+    
+}
+const validateData = (userData) => {
 }
 
 const loadData = async () => {
@@ -12,7 +18,7 @@ const loadData = async () => {
         let user = response.data[i];
         htmlData += ` <div>
         ${user.firstname} ${user.lastname}
-        <button>Edit</button>
+        <a href= "index.html?id${user.id}"><button>Edit</button></a>
         <button class='delete' data-id='${user.id}'>Delete</button>
         </div>`
     }

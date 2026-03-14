@@ -83,7 +83,7 @@ app.post('/users', async (req, res) => {
 app.get('/users/:id', async (req, res) => {
     try {
         let id = req.params.id
-        const results = await conn.query('SELECT * FROM users WHERE id = ?', id)
+        const results = await conn.query('SELECT * FROM users WHERE id = ?', [id])
         if (results[0].length == 0) {
             throw { statusCode: 404, message: 'User not found' };
         }
@@ -129,7 +129,7 @@ app.put('/users/:id', async (req, res) => {
 app.delete('/users/:id', async (req, res) => {
     try {
         let id = req.params.id
-        const results = await conn.query('DELETE FROM users WHERE id = ?', id)
+        const results = await conn.query('DELETE FROM users WHERE id = ?', [id])
         if (results[0].affectedRows == 0) {
             throw { statusCode: 404, message: 'User not found' };
         }   
